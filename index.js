@@ -80,7 +80,6 @@ function handleTweetBtnClick(reply, uuid){
 
     if(tweetInput.value){
         if (reply){
-            document.getElementById("message").textContent="Reply to " + uuid
             replyToTweet=false
             replyTweetId=""
             document.getElementById("tweet-btn").textContent="Tweet"
@@ -157,7 +156,6 @@ function getFeedHtml(data){
         <div>
             <p class="handle">${tweet.handle}</p>
             <p class="tweet-text">${tweet.tweetText}</p>
-            <p class="tweet-text">${tweet.uuid}</p>
             <div class="tweet-details">
                 <span class="tweet-detail">
                     <i class="fa-regular fa-comment-dots"
